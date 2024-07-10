@@ -6,5 +6,5 @@ export const assignComma = (num: number | null | undefined) => {
                 let retStr = numStr.match(regx)?.join(",").split("").reverse().join("");
                 return float_num.length > 1 ? retStr + "." + float_num[1] : retStr;
             }
-            return "";
+            return "0";
 }
